@@ -1,0 +1,134 @@
+body {
+    font: 1rem "Arial", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {font-size: 2rem; font-weight: 800;}
+h2 {font-size: 1.8rem; font-weight: 800;}
+h3 {font-size: 1.6rem; font-weight: 800;}
+h4 {font-size: 1.4rem; font-weight: 800;}
+h5 {font-size: 1.2rem; }
+
+h2{ 
+    margin-bottom:15px;
+}
+
+#wrapper h1 {
+    background-color: #2E2E2E;
+    height: 100%;
+    margin: 0 0 -60px;
+    padding: 0 0 20px;
+
+/*    color:#FFF;
+    text-align:center;
+*/
+}
+
+#tabContainer {
+    background-color: #5E2E2E;
+    border: 1px solid lime;
+    height: 100%;
+    margin: 0 0 -20px;
+    padding: 10px 10px 90px;
+
+/*    margin: 0 0 -20px;
+    padding: 10px 10px 0px;
+    background-color: #5e2e2e;
+    height: 100%;
+*/}
+
+.tabs{
+    height:30px;
+}
+
+.tabs > ul {
+    list-style:none;
+}
+
+.tabs > ul > li{
+    margin-right: 4px;
+    padding:7px;
+    height: 16px;
+    display:block;
+    float:left;
+    color:#FFF;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #47631F
+    background: #74a433; /* Old browsers */
+    background: -moz-linear-gradient(top,  #74a433 0%, #507023 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#74a433), color-stop(100%,#507023)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #74a433 0%,#507023 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #74a433 0%,#507023 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #74a433 0%,#507023 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #74a433 0%,#507023 100%); /* W3C */
+}
+
+.tabs > ul > li:hover {
+    background: #FFFFFF; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
+    cursor:pointer;
+    color: #333;
+}
+
+.tabs > ul > li.tabActive {
+    background: #FFFFFF;
+    background: linear-gradient(to bottom,  #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); /* W3C */
+    cursor:pointer;
+    color: #333;
+}
+.tabpages {
+    background-color: #FFFF00;
+    border: 4px solid red;
+    height: 100%;
+    margin: 0 0 -75px;
+    padding: 0 0 8px;
+
+/*    height: 100%;
+    margin: 0 0 -20px;
+    padding: 0 0 20px;
+*/}
+.tabpage {
+    background: none repeat scroll 0 0 #F2A2FF;
+    border: 2px solid magenta;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #333333;
+    height: 100%;
+    margin: 0 0 -4px;
+    padding: 4px 4px 0;
+
+/*    background: #FFFFFF; /* old browsers */
+    color:#333;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; 
+*/}
+iframe {
+    width: 100%;
+    height: 100%
+}
+#wrapper {
+    height: 100%;
+    margin: 0 0 -20px;
+    padding: 0px 0px 20px;
+    background-color: #2E2E2E;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 0 0 60px;
+}
