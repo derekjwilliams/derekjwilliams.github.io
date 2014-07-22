@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.chart rect {
+  fill: steelblue;
+  stroke: #111;
+  stroke-opacity:0.8;
+  stroke-width: 0.5;
+}
+
+.chart text {
+  fill: black;
+  font: 7px sans-serif;
+  text-anchor: end;
+}
+text.catagory-label {
+  font-weight: bold;
+  font-size: 8px;
+}
+text.device-type-label {
+  font-weight: bold;
+}
+
+</style>
+<svg class="chart">
+    <defs>
+      <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#eeeeee"/>
+        <stop offset="100%" stop-color="#6FD4EB"/>
+      </linearGradient>
+      <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#eeeeee"/>
+        <stop offset="100%" stop-color="#997AC0"/>
+      </linearGradient>
+      <linearGradient id="Gradient3" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#eeeeee"/>
+        <stop offset="100%" stop-color="#B4E269"/>
+      </linearGradient>
+      <linearGradient id="Gradient4" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#eeeeee"/>
+        <stop offset="100%" stop-color="#E97571"/>
+      </linearGradient>
+      <linearGradient id="Gradient5" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#eeeeee"/>
+        <stop offset="100%" stop-color="#5884CC"/>
+      </linearGradient>
+      <style type="text/css"><![CDATA[
+        #rect1 { fill: url(#Gradient1); }
+        .stop1 { stop-color: red; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: blue; }
+      ]]></style>
+    </defs>
+</svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+(function(){
+function decimalAdjust(type, value, exp) {
+        // If the exp is undefined or zero...
+        if (typeof exp === 'undefined' || +exp === 0) {
+            return Math[type](value);
+        }
+        value = +value;
+        exp = +exp;
+        // If the value is not a number or the exp is not an integer...
+        if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+            return NaN;
+        }
+        // Shift
+        value = value.toString().split('e');
+        value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+        // Shift back
+        value = value.toString().split('e');
+        return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+    }
+
+    // Decimal round
+    if (!Math.round10) {
+        Math.round10 = function(value, exp) {
+            return decimalAdjust('round', value, exp);
+        };
+    }
+})();
+
+var width = 460,
+    barHeight = 10;
+
+var x = d3.scale.linear()
+    .range([0, width - 32]);
+
+var chart = d3.select(".chart")
+    .attr("width", width);
+
+d3.csv("data2.csv", function(error, data) {
+  x.domain([0, d3.max(data, function(d) { return 100 })]);
+
+  chart.attr("height", barHeight * 9 * 6 + 20);
+  var textOffset = 24;
+  var bar = chart.selectAll("g")
+      .data(data)
+      .enter().append("g")
+      .attr("transform", function(d, i) { return "translate(0," + (i * barHeight * 7 + 2) + ")"; });
+
+  bar.append("text")
+      .attr("x", 0)
+      .attr("y", 5)
+      .attr("dy", ".35em")
+      .classed('catagory-label',true)
+      .style("text-anchor", "start")
+      .text(function(d) { return d.ApplicationType; });
+
+  bar.append("rect")
+      .attr("width", function(d) { return x(d.Daily) * 100.0; })
+      .attr("y", 11)
+      .style("fill", "url(#Gradient1)")
+      .attr("height", barHeight);
+
+  bar.append("text")
+      .attr("x", function(d) { return x((d.Daily * 100.0)) + textOffset; })
+      .attr("y", barHeight / 2 + 11)
+      .attr("dy", ".35em")
+      .text(function(d) { return Math.round10(d.Daily * 100.0, -1)  + "%"; });
+
+  bar.append("rect")
+      .attr("width", function(d) { return x(d.Weekly * 100); })
+      .attr("y", barHeight + 11)
+      .style("fill", "url(#Gradient2)")
+      .attr("height", barHeight);
+
+  bar.append("text")
+      .attr("x", function(d) { return x((d.Weekly * 100)) + textOffset; })
+      .attr("y", barHeight + barHeight / 2 + 11)
+      .attr("dy", ".35em")
+      .text(function(d) { return Math.round10(d.Weekly * 100, -1)  + "%"; });
+
+  bar.append("rect")
+      .attr("width", function(d) { return x( d.Monthly * 100); })
+      .attr("y", 2 * barHeight + 11)
+      .style("fill", "url(#Gradient3)")
+      .attr("height", barHeight);
+
+  bar.append("text")
+      .attr("x", function(d) { return x(( d.Monthly * 100)) + textOffset; })
+      .attr("y", 2 * barHeight + barHeight / 2 + 11)
+      .attr("dy", ".35em")
+      .text(function(d) { return Math.round10( d.Monthly * 100, -1)  + "%"; });
+  
+  bar.append("rect")
+      .attr("width", function(d) { return x( d.Rarely * 100); })
+      .attr("y", 3 * barHeight + 11)
+      .style("fill", "url(#Gradient4)")
+      .attr("height", barHeight);
+
+  bar.append("text")
+      .attr("x", function(d) { return x(( d.Rarely * 100)) + textOffset; })
+      .attr("y", 3 * barHeight + barHeight / 2 + 11)
+      .attr("dy", ".35em")
+      .text(function(d) { return Math.round10( d.Rarely * 100, -1)  + "%"; });
+
+  bar.append("rect")
+      .attr("width", function(d) { return x( d.Never * 100); })
+      .attr("y", 4 * barHeight + 11)
+      .style("fill", "url(#Gradient5)")
+      .attr("height", barHeight);
+
+  bar.append("text")
+      .attr("x", function(d) { return x(( d.Never * 100)) + textOffset; })
+      .attr("y", 4 * barHeight + barHeight / 2 + 11)
+      .attr("dy", ".35em")
+      .text(function(d) { return Math.round10( d.Never * 100, -1)  + "%"; });
+});
+
+
+</script>
