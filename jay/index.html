@@ -114,7 +114,7 @@ d3.csv("data2.csv", function(error, data) {
       .attr("width", function(d) { return x(d.Daily) * 100.0; })
       .attr("y", 15.5)
       .style("fill", "url(#Gradient1)")
-      .attr("height", barHeight - 0);
+      .attr("height", barHeight);
 
   bar.append("text")
       .attr("x", function(d) { return x((d.Daily * 100.0)) + textOffset; })
@@ -126,7 +126,7 @@ d3.csv("data2.csv", function(error, data) {
       .attr("width", function(d) { return x(d.Weekly * 100); })
       .attr("y", barHeight + 15.5)
       .style("fill", "url(#Gradient2)")
-      .attr("height", barHeight  - 0);
+      .attr("height", barHeight);
 
   bar.append("text")
       .attr("x", function(d) { return x((d.Weekly * 100)) + textOffset; })
@@ -138,7 +138,7 @@ d3.csv("data2.csv", function(error, data) {
       .attr("width", function(d) { return x( d.Monthly * 100); })
       .attr("y", 2 * barHeight + 15.5)
       .style("fill", "url(#Gradient3)")
-      .attr("height", barHeight - 0);
+      .attr("height", barHeight);
 
   bar.append("text")
       .attr("x", function(d) { return x(( d.Monthly * 100)) + textOffset; })
@@ -148,9 +148,9 @@ d3.csv("data2.csv", function(error, data) {
   
   bar.append("rect")
       .attr("width", function(d) { return x( d.Rarely * 100); })
-      .attr("y", 3 * barHeight + 15.5)/
+      .attr("y", 3 * barHeight + 15.5)
       .style("fill", "url(#Gradient4)")
-      .attr("height", barHeight - 0);
+      .attr("height", barHeight);
 
   bar.append("text")
       .attr("x", function(d) { return x(( d.Rarely * 100)) + textOffset; })
@@ -162,7 +162,7 @@ d3.csv("data2.csv", function(error, data) {
       .attr("width", function(d) { return x( d.Never * 100); })
       .attr("y", 4 * barHeight + 15.5)
       .style("fill", "url(#Gradient5)")
-      .attr("height", barHeight - 0);
+      .attr("height", barHeight);
 
   bar.append("text")
       .attr("x", function(d) { return x(( d.Never * 100)) + textOffset; })
