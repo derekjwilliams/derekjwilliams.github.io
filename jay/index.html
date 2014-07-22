@@ -84,7 +84,7 @@ function decimalAdjust(type, value, exp) {
 })();
 
 var width = 460,
-    barHeight = 16;
+    barHeight = 17;
 
 var x = d3.scale.linear()
     .range([0, width - 32]);
@@ -96,7 +96,7 @@ d3.csv("data2.csv", function(error, data) {
   x.domain([0, d3.max(data, function(d) { return 100 })]);
 
   chart.attr("height", barHeight * 9 * 6 + 20);
-  var textOffset = 54;
+  var textOffset = 36;
   var bar = chart.selectAll("g")
       .data(data)
       .enter().append("g")
