@@ -20,8 +20,8 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 queue()
-    .defer(d3.json, "/d/us.json")
-    .defer(d3.csv, "/d/mapdata.csv", function(d) { 
+    .defer(d3.json, "data/us.json")
+    .defer(d3.csv, "data/mapdata.csv", function(d) { 
         return { 
             type: "Feature",
             id: d.ID,
