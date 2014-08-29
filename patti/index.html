@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script>
+
+var width = 960,
+    height = 500;
+
+var radius = d3.scale.sqrt()
+    .domain([0, 1e6])
+    .range([0, 10]);
+
+var path = d3.geo.path();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+queue()
+    .defer(d3.json, "/d/us.json")
+    .defer(d3.csv, "/d/mapdata.csv", function(d) { 
+        return { 
+            type: "Feature",
+            id: d.ID,
+            geometry: {
+                type: "Point",
+                coordinates: [
+                    +d.Longitude, +d.Latitude
+                ]
+            },
+            properties: {
+                orgainization: d["Organization Name"],
+                orgtype: d["Organization Type"],
+                url: d.URL,
+                contact: {
+                    name: d["First Name"] + " " + d["Last Name"],
+                    email: d.Email,
+                    phone: d.Phone
+                },  
+                address: d.Address,
+                city: d.City,
+                state: d.State,
+                country: d.Country,
+                postalcode: d["Postal Code"],
+                key: d.ID
+            }
+        }
+    })
+    .await(ready);
+
+function ready(error, us, centroid) {
+  svg.append("path")
+      .attr("class", "states")
+      .attr("style", "fill: #ccc; stroke: #fff")
+      .datum(topojson.feature(us, us.objects.states))
+      .attr("d", path);
+
+    svg.selectAll(".symbol")
+            .data(centroid.sort(function(a, b) { return b.properties.key - a.properties.key; }))
+      .enter().append("path")
+      .attr("class", "symbol")
+      .attr("style", "fill: steelblue; fill-opacity: .8; stroke: #fff")
+      .attr("d", path.pointRadius(function(d) { return 5; }));
+}
+
+</script>
