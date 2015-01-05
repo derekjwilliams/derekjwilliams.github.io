@@ -26,8 +26,15 @@
       alert( "Signed out error:" + e.error.message );
     });
   });
-  $('#login-to-google').on('click', function() {
-    hello.login(google).then( function(){
+  $('#login-to-google-popup').on('click', function() {
+    hello.login('google', {display:'popup'}).then( function(){
+      alert("Signed out");
+    }, function(e){
+      alert( "Signed out error:" + e.error.message );
+    });
+  });
+  $('#login-to-google-full').on('click', function() {
+    hello.login('google', {display:"page"}).then( function(){
       alert("Signed out");
     }, function(e){
       alert( "Signed out error:" + e.error.message );
