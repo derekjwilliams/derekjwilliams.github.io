@@ -27,14 +27,14 @@
     });
   });
   $('#login-to-google-popup').on('click', function() {
-    hello.login('google', {display:'popup'}).then( function(){
+    hello.login('google', {display:'popup', scope:'friends'}).then( function(){
       alert("Signed out");
     }, function(e){
       alert( "Signed out error:" + e.error.message );
     });
   });
   $('#login-to-google-full').on('click', function() {
-    hello.login('google', {display:"page"}).then( function(){
+    hello.login('google', {display:"page", scope:'friends'}).then( function(){
       alert("Signed out");
     }, function(e){
       alert( "Signed out error:" + e.error.message );
