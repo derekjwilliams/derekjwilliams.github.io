@@ -19,8 +19,8 @@
       label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
     });
   });
-  $('logout-of-google').on('click', function() {
-    hello( "facebook" ).logout().then( function(){
+  $('#logout-of-google').on('click', function() {
+    hello("google").logout().then( function(){
       alert("Signed out");
     }, function(e){
       alert( "Signed out error:" + e.error.message );
