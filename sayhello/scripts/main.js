@@ -3,7 +3,7 @@
     windows: WINDOWS_CLIENT_ID,
     google: GOOGLE_CLIENT_ID
   }, {
-    redirect_uri: 'http://derekjwilliams.github.io/sayhello/'
+    redirect_uri: 'redirect.html'
   });
   hello.on('auth.login', function(auth) {
 
