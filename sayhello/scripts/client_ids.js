@@ -18,7 +18,8 @@ var WINDOWS_CLIENT_ID = {
 }[window.location.hostname];
 
 //
-var GOOGLE_CLIENT_ID = '656984324806-sr0q9vq78tlna4hvhlmcgp2bs2ut8uj8.apps.googleusercontent.com';
+//
+var GOOGLE_CLIENT_ID = '728772719788-6p8f3uhcgt49ts3pfa9o4pi488i4snao.apps.googleusercontent.com';
 
 // To make it a little easier
 var CLIENT_IDS = {
