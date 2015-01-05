@@ -26,3 +26,10 @@
       alert( "Signed out error:" + e.error.message );
     });
   });
+  $('#login-to-google').on('click', function() {
+    hello.login(google).then( function(){
+      alert("Signed out");
+    }, function(e){
+      alert( "Signed out error:" + e.error.message );
+    });
+  });
