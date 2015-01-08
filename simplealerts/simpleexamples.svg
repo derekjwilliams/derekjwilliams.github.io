@@ -26,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
      inkscape:cx="147.93161"
-     inkscape:cy="374.42361"
+     inkscape:cy="738.07853"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,8 +58,8 @@
        id="rect6542"
        width="743.47229"
        height="1050.5586"
-       x="2.0203052"
-       y="-0.21676908"
+       x="1.0101526"
+       y="3.8238411"
        ry="4.8838553" />
     <path
        sodipodi:nodetypes="cc"
@@ -110,7 +110,7 @@
        id="text4660-3-3-3-6"
        y="679.56555"
        x="514.94629"
-       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        xml:space="preserve"><tspan
          y="679.56555"
          x="514.94629"
@@ -127,7 +127,7 @@
        style="fill:#d4aa00;fill-opacity:1;fill-rule:evenodd;stroke:none" />
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="447.14285"
        y="502.36218"
        id="text4664"
@@ -415,7 +415,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="23.57143"
        y="262.36218"
        id="text5101"
@@ -435,7 +435,7 @@
          dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0">one is alert with severity critical?</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="44.285713"
        y="506.64792"
        id="text5331"
@@ -446,7 +446,7 @@
          id="tspan5335">Yikes! Huge misrepresentation of what is actually happening</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="22.857145"
        y="591.64795"
        id="text5495"
@@ -455,7 +455,7 @@
          id="tspan5497"
          x="22.857145"
          y="591.64795"
-         style="font-size:18px;font-weight:bold;-inkscape-font-specification:Sans Bold">So Segment the severity in the alert indicator</tspan></text>
+         style="font-size:18px;font-weight:bold;-inkscape-font-specification:Arial Bold;font-family:Arial;font-style:normal;font-stretch:normal;font-variant:normal">So Segment the severity in the alert indicator</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -464,7 +464,7 @@
        style="fill:none;stroke:#696969;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="534.64282"
        y="613.25439"
        id="text4660-3-3"
@@ -528,7 +528,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="263.21429"
        y="653.43365"
        id="text5640"
@@ -883,7 +883,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="33.308571"
        y="852.3316"
        id="text5495-8"
@@ -953,7 +953,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="223.66571"
        y="891.26013"
        id="text5640-1"
@@ -1307,7 +1307,7 @@
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="295.74533"
        y="375.99829"
        id="text4660-2-2-7"
@@ -1516,7 +1516,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="617.14288"
        y="597.36218"
        id="text6283"
@@ -1526,7 +1526,7 @@
          x="617.14288"
          y="597.36218">on hover</tspan></text>
     <rect
-       style="fill:#e3dedb;fill-opacity:0.77625573;fill-rule:evenodd;stroke:#696969;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e3dedb;fill-opacity:0.77625573000000003;fill-rule:evenodd;stroke:#696969;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect6287"
        width="92.14286"
        height="33.571434"
@@ -1535,7 +1535,7 @@
        ry="2.2726853" />
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="573.57147"
        y="610.93359"
        id="text6289"
@@ -1549,12 +1549,12 @@
          y="627.18359"
          id="tspan6293">5 alerts</tspan></text>
     <path
-       style="fill:#483737;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#483737;stroke:#000000;stroke-width:0.99999994000000003px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 556.03065,618.75708 9.36729,0 -4.44139,5.78163 z"
        id="path6295-6"
        inkscape:connector-curvature="0" />
     <rect
-       style="fill:#e3dedb;fill-opacity:0.83105022;fill-rule:evenodd;stroke:#696969;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e3dedb;fill-opacity:0.83105021999999995;fill-rule:evenodd;stroke:#696969;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect6287-8"
        width="106.42858"
        height="47.857147"
@@ -1563,7 +1563,7 @@
        ry="3.2397852" />
     <text
        xml:space="preserve"
-       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="311.42682"
        y="716.92505"
        id="text6289-8"
@@ -1577,12 +1577,12 @@
          y="733.17505"
          id="tspan6293-8">10 alerts</tspan></text>
     <path
-       style="fill:#483737;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#483737;stroke:#000000;stroke-width:0.99999994000000003px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 296.34521,706.21075 9.36729,0 -4.44139,5.78163 z"
        id="path6295-7"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#483737;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#483737;stroke:#000000;stroke-width:0.99999994000000003px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 296.02886,721.89137 9.36729,0 -4.44139,5.78163 z"
        id="path6295-6-6"
        inkscape:connector-curvature="0" />
@@ -1610,7 +1610,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
        x="35.714287"
        y="31.647896"
        id="text6515"
@@ -1619,6 +1619,6 @@
          id="tspan6517"
          x="35.714287"
          y="31.647896"
-         style="font-size:16px;font-weight:bold">Nice Happy world, no severity levels</tspan></text>
+         style="font-size:16px;font-weight:bold;-inkscape-font-specification:Arial Bold;font-family:Arial;font-style:normal;font-stretch:normal;font-variant:normal">Nice Happy world, no severity levels</tspan></text>
   </g>
 </svg>
