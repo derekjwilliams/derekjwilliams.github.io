@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg3837"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="simpleexamples.svg">
   <defs
      id="defs3839" />
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="147.93161"
-     inkscape:cy="738.07853"
+     inkscape:cx="-32.885696"
+     inkscape:cy="390.57424"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="876"
+     inkscape:window-width="1680"
+     inkscape:window-height="942"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,8 +58,8 @@
        id="rect6542"
        width="743.47229"
        height="1050.5586"
-       x="1.0101526"
-       y="3.8238411"
+       x="104.04572"
+       y="101.80864"
        ry="4.8838553" />
     <path
        sodipodi:nodetypes="cc"
@@ -133,7 +133,7 @@
        id="text4664"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan4666"></tspan></text>
+         id="tspan4666" /></text>
     <g
        id="g4716"
        transform="translate(-92.142857,-72.857143)">
@@ -1620,5 +1620,42 @@
          x="35.714287"
          y="31.647896"
          style="font-size:16px;font-weight:bold;-inkscape-font-specification:Arial Bold;font-family:Arial;font-style:normal;font-stretch:normal;font-variant:normal">Nice Happy world, no severity levels</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#d00000;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3523"
+       sodipodi:cx="57.578693"
+       sodipodi:cy="724.06262"
+       sodipodi:rx="29.294424"
+       sodipodi:ry="29.294424"
+       d="M 86.873117,724.06262 A 29.294424,29.294424 0 1 1 37.981757,702.28825"
+       sodipodi:start="0"
+       sodipodi:end="3.9795739"
+       sodipodi:open="true"
+       transform="matrix(0.40961448,0,0,0.40961448,196.50578,386.10255)" />
+    <path
+       transform="matrix(0.40961448,0,0,0.40961448,196.50578,386.21747)"
+       sodipodi:type="arc"
+       style="fill:none;stroke:#009500;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3523-4"
+       sodipodi:cx="57.578693"
+       sodipodi:cy="724.06262"
+       sodipodi:rx="29.294424"
+       sodipodi:ry="29.294424"
+       d="m 34.908862,705.50886 a 29.294424,29.294424 0 0 1 51.96353,18.34756"
+       sodipodi:start="3.8274732"
+       sodipodi:end="6.2761464"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="211.12189"
+       y="686.68695"
+       id="text4311"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4313"
+         x="211.12189"
+         y="686.68695">11</tspan></text>
   </g>
 </svg>
